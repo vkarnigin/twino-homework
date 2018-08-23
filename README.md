@@ -29,6 +29,9 @@ POST http://hostname:4567/apply
 ```
 Payload examples can also be found in the test resources.
 
+For testing purposes, the database is being initially populated in the LocalDatabaseConfiguration class. Change the SQL
+statements there if you want to add something (i.e. blacklist a personal ID), and restart the app.
+
 ## Building blocks
 
 
