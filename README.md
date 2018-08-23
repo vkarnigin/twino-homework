@@ -30,7 +30,7 @@ POST http://hostname:4567/apply
 Payload examples can also be found in the test resources.
 
 For testing purposes, the database is being initially populated in the LocalDatabaseConfiguration class. Change the SQL
-statements there if you want to add something (i.e. blacklist a personal ID), and restart the app.
+statements if you want to add something (i.e. blacklist a personal ID), and then restart the app.
 
 ## Building blocks
 
@@ -50,7 +50,7 @@ The system is based on multiple lightweight frameworks and technologies:
 I decided not to use a heavy framework like Spring Boot, and went for a more lightweight solution, because, the way I 
 see it, this app has all it takes to be a microservice, and microservices should be light, small, fast and
 scalable. While Spring has some very nice features like loose code coupling, rapid development out of the box and the
-ability to easily integrate virtually anything, to me it just seems too heavy for this app - the set features it has is
+ability to easily integrate virtually anything, to me it just seems too heavy for this app - the set of features it has is
 overkill, it takes time to fire up the context, etc. Spark, on the other hand, weighs nothing and starts momentarily.
 
 The controllers of the system are implemented as singletons, so they should be thread-safe. In fact, the only thing that 
