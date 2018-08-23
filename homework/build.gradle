@@ -77,27 +77,27 @@ run {
 
 dependencies {
 
-    // REST client
+    // Feign
     compile 'io.github.openfeign:feign-okhttp:9.3.1'
     compile 'io.github.openfeign:feign-gson:9.3.1'
 
-    // A framework for building REST APIs
+    // Spark
     compile 'com.sparkjava:spark-core:2.7.2'
 
-    // Handles DTO serialization into JSON
+    // GSON
     compile 'com.google.code.gson:gson:2.8.5'
 
-    // A lightweight database
+    // H2
     compile 'com.h2database:h2:1.4.197'
 
-    // A lightweight JDBC wrapper/ORM provider
+    // JOOQ
     compile 'org.jooq:jooq:3.11.4'
     jooqRuntime 'com.h2database:h2:1.4.197'
 
-    // Provides syntactic sugar by allowing to omit some of the boilerplate code
+    // Lombok
     compileOnly 'org.projectlombok:lombok:1.18.2'
 
-    // Groovy-based testing framework
+    // Spock
     testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
     testCompile 'cglib:cglib-nodep:3.2.0'
 
