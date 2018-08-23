@@ -64,8 +64,8 @@ jooq {
                 // ...
             }
             target {
-                packageName = 'lv.twino.homework.domain'
-                // directory = ...
+                packageName = 'lv.twino.homework.jooq'
+                 directory = 'src/main/java'
             }
         }
     }
@@ -76,13 +76,29 @@ run {
 }
 
 dependencies {
-    jooqRuntime 'com.h2database:h2:1.4.197'
+
+    // REST client
     compile 'io.github.openfeign:feign-okhttp:9.3.1'
     compile 'io.github.openfeign:feign-gson:9.3.1'
+
+    // A framework for building REST APIs
     compile 'com.sparkjava:spark-core:2.7.2'
+
+    // Handles DTO serialization into JSON
     compile 'com.google.code.gson:gson:2.8.5'
+
+    // A lightweight database
     compile 'com.h2database:h2:1.4.197'
+
+    // A lightweight JDBC wrapper/ORM provider
     compile 'org.jooq:jooq:3.11.4'
+    jooqRuntime 'com.h2database:h2:1.4.197'
+
+    // Provides syntactic sugar by allowing to omit some of the boilerplate code
     compileOnly 'org.projectlombok:lombok:1.18.2'
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    // Groovy-based testing framework
+    testCompile 'org.spockframework:spock-core:1.1-groovy-2.4'
+    testCompile 'cglib:cglib-nodep:3.2.0'
+
 }
