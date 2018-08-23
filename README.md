@@ -60,7 +60,7 @@ like Hazelcast, but then decided not to, because it would require network config
 lot of space, and scaling was out of scope of the task.
 
 If the app were "real", I'd also add Hystrix to the REST client that checks country codes, and possibly add a circuit breaker.
-That way, we wouldn't have a chain of timeouts if the external service goes down. But, again, this was out of scope.
+That way, we wouldn't have a chain of timeouts if the external service went down. But, again, this was out of scope.
 
 Logs are non-existent, and the database is also obviously not production-ready. I'd use ELK and Mongo for these purposes
 in the real world.
