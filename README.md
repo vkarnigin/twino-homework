@@ -4,7 +4,7 @@ Twino-homework is a demo app for loan management.
 
 ## Local setup
 
-To run the app, simply execute the "run" Gradle task from build.gradle (i.e. "gradlew run" in the terminal). The app was tested on JDK 1.8.0_60.
+To run the app, simply execute the "run" Gradle task (i.e. "gradlew run" in the terminal). The app was tested on JDK 1.8.0_60.
 
 ## Usage
 
