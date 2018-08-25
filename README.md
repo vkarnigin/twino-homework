@@ -1,6 +1,6 @@
 # Twino-homework
 
-Twino-homework is a demo app for loan management.
+Twino-homework is a demo app for loan management, that exposes a REST API which allows to list approved loans and apply for a loan. Applications from callers with blacklisted personal IDs get rejected.
 
 ## Local setup
 
