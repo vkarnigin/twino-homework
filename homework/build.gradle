@@ -102,3 +102,9 @@ dependencies {
     testCompile 'cglib:cglib-nodep:3.2.0'
 
 }
+
+/*
+Removes the task dependency from compileJava to generateSampleJooqSchemaSource
+Comment this out when you DO want to run JOOQ's codegen
+*/
+project.tasks.getByName('compileJava').dependsOn -= 'generateSampleJooqSchemaSource'
